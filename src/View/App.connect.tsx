@@ -1,15 +1,15 @@
 import { Dispatch, AnyAction } from "redux";
 import { connect } from "react-redux";
-import App, { AppProps } from "./App";
+import App, { IAppProps } from "./App";
 import { RootState } from "../Controller/Root";
 
-const mapStateToProps: (state: RootState) => AppProps = (state: RootState) => ({
-  
+const mapStateToProps: (state: RootState) => IAppProps = (state: RootState) => ({
+  Navigation: state.Navigation.Navigation
 });
 
 const mapDispatchToProps = (
   dispatch: Dispatch<AnyAction>,
-  props: AppProps
+  props: IAppProps
 ) => ({
 });
 

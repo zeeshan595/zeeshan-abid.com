@@ -1,18 +1,26 @@
 import * as React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
+import INavigation from "../Model/Navigation";
 
-export interface AppProps {
+export interface IAppProps {
+  Navigation?: INavigation[];
+}
 
-};
-
-class App extends React.Component<AppProps, {}> {
+class App extends React.Component<IAppProps, {}> {
   render() {
     return (
-      <div className="underConstruction">
-        <h1>Under Construction</h1>
-        <p>
-          This website is currently being worked on. Please check back later for an update.
-        </p>
-      </div>
+      <BrowserRouter>
+        <div>
+          {this.props.Navigation.map((el, index) => (
+            <Route
+              key={index}
+              path={el.Path}
+              component={el.Component}
+              exact={el.exact}
+            />
+          ))}
+        </div>
+      </BrowserRouter>
     );
   }
 }
