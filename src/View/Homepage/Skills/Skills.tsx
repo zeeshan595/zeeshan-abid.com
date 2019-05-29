@@ -1,14 +1,14 @@
 import * as React from "react";
 import "./Style.scss";
 
-export interface IIntroProps {
+export interface ISkillsProps {
 
 }
 
-export interface IIntroState {
+export interface ISkillsState {
 }
 
-class Intro extends React.Component<IIntroProps, IIntroState>
+class Skills extends React.Component<ISkillsProps, ISkillsState>
 {
   render() {
     return (
@@ -66,4 +66,4 @@ class Intro extends React.Component<IIntroProps, IIntroState>
   }
 }
 
-export default Intro;
+export default Skills;
