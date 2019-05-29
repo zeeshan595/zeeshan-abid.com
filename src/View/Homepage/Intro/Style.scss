@@ -1,0 +1,78 @@
+@import "../../Defaults/Colors.scss";
+@import "../../Defaults/Sections.scss";
+
+.Intro {
+  position: relative;
+  height: $Height;
+
+  h4 {
+    display: block;
+    color: rgb(90, 90, 90);
+    font-weight: normal;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 250px;
+    font-size: 19px;
+    text-transform: uppercase;
+  }
+}
+
+.NavigationCenter {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+  transition: top 0.5s ease-in;
+  color: rgb(90, 90, 90);
+  border-radius: 2px;
+
+  li {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 15px;
+    
+    a {
+      color: rgb(90, 90, 90);
+      text-decoration: none;
+    }
+    &:hover {
+      background-color: $DutchWhite;
+    }
+  }
+}
+
+.Navigation {
+  display: block;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  text-align: right;
+  padding: 0;
+  transition: top 0.5s ease-in;
+  top: 10px;
+  right: 20px;
+  z-index: 9999;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+
+  li {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: $DutchWhite;
+    font-size: 15px;
+    
+    a {
+      color: rgb(90, 90, 90);
+      text-decoration: none;
+    }
+  }
+}

@@ -6,7 +6,11 @@ export interface IAppProps {
   Navigation?: INavigation[];
 }
 
-class App extends React.Component<IAppProps, {}> {
+export interface IAppState {
+
+}
+
+class App extends React.Component<IAppProps, IAppState> {
   render() {
     return (
       <BrowserRouter>
