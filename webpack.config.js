@@ -43,6 +43,14 @@ module.exports = {
           }
         ],
         exclude: [options.nodeModulesPath]
+      },
+      {
+        test: /.svg/,
+        use: [
+          {
+            loader: "file-loader"
+          }
+        ]
       }
     ]
   },

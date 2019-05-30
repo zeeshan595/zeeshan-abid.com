@@ -1,8 +1,5 @@
 import * as React from "react";
-
-import Intro from "./Intro/Intro";
-import Skills from "./Skills/Skills";
-import Projects from "./Projects/Projects";
+import Intro from "./Intro/Intro"
 
 export interface IHomepageProps {
 
@@ -18,8 +15,9 @@ class Homepage extends React.Component<IHomepageProps, IHomepageState>
     return (
       <div>
         <Intro />
-        <Skills />
-        <Projects />
+        <div className="backgroundStars"></div>
+        <div className="backgroundSky"></div>
+        <div className="moonlight"></div>
       </div>
     );
   }
