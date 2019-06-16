@@ -1,54 +1,157 @@
-.moonContainer {
-  .moon {
-    display: block;
-    position: fixed;
-    width: 600px;
-    height: 600px;
-    top: 95px;
-    left: 820px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-image: url("../../../../assets/images/moon.svg");
-    z-index: 20;
+.intro {
+  .content {
+    padding-top: 250px;
+    padding-left: 100px;
+
+    @media screen and (max-width: 1020px) {
+      max-width: 400px;
+    }
+
+    @media screen and (max-width: 730px) {
+      padding-top: 600px;
+    }
+
+    @media screen and (max-width: 500px) {
+      padding-top: 400px;
+    }
+
+    h1 {
+      color: white;
+      font-weight: normal;
+      font-size: 80px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .info {
+      display: inline-block;
+      color: white;
+      font-size: 21px;
+      font-weight: normal;
+      line-height: 30px;
+    }
   }
-  .clouds {
-    display: block;
+
+  .scrollDown {
     position: fixed;
-    width: 380px;
-    height: 190px;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    left: -100px;
+    bottom: 150px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
 
-    &.cloud1 {
-      top: 25px;
-      left: 1100px;
-      background-image: url("../../../../assets/images/b_cloud01.svg");
-      z-index: 10;
+    span {
+      color: white;
+      letter-spacing: 5px;
     }
-    &.cloud2 {
-      top: 120px;
-      left: 630px;
-      background-image: url("../../../../assets/images/b_cloud02.svg");
-      z-index: 10;
+    .line {
+      display: inline-block;
+      width: 150px;
+      height: 5px;
+      background: white;
+      margin-left: 20px;
+      margin-bottom: 3px;
+      border-radius: 5px;
+    }
+  }
+
+  .moonContainer {
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 600px;
+    width: 1000px;
+    height: 750px;
+
+    @media screen and (max-width: 1020px) {
+      top: 200px;
+      left: 350px;
+      width: 700px;
+      height: 525px;
     }
 
-    &.cloud3 {
-      top: 445px;
-      left: 685px;
-      background-image: url("../../../../assets/images/cloud1.svg");
-      z-index: 30;
+    @media screen and (max-width: 730px) {
+      top: 0;
+      left: 0;
+      width: 700px;
+      height: 525px;
     }
-    &.cloud4 {
-      top: 550px;
-      left: 1095px;
-      background-image: url("../../../../assets/images/cloud2.svg");
-      z-index: 30;
+
+    @media screen and (max-width: 500px) {
+      top: 0;
+      left: 0;
+      width: 500px;
+      height: 375px;
     }
-    &.cloud5 {
-      top: 290px;
-      left: 1215px;
-      background-image: url("../../../../assets/images/cloud3.svg");
-      z-index: 30;
+
+    span {
+      display: block;
+      position: absolute;
+      color: #d01e2d;
+      opacity: 1;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 360%;
+      top: 45%;
+      left: 10%;
+      text-shadow: 0 10px 15px rgba(2, 11, 22, 0.2);
+      z-index: 40;
+    }
+
+    .moon {
+      display: block;
+      position: absolute;
+      width: 60%;
+      height: 80%;
+      top: 9.5%;
+      left: 20.94%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-image: url("../../../../assets/images/moon.svg");
+      z-index: 20;
+    }
+    .clouds {
+      display: block;
+      position: absolute;
+      width: 38%;
+      height: 40%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+      &.cloud1 {
+        top: 2.5%;
+        left: 50%;
+        background-image: url("../../../../assets/images/b_cloud01.svg");
+        z-index: 10;
+      }
+      &.cloud2 {
+        top: 12%;
+        left: 3%;
+        background-image: url("../../../../assets/images/b_cloud02.svg");
+        z-index: 10;
+      }
+
+      &.cloud3 {
+        top: 60%;
+        left: 8.5%;
+        background-image: url("../../../../assets/images/cloud1.svg");
+        z-index: 30;
+      }
+      &.cloud4 {
+        top: 70%;
+        left: 49.5%;
+        background-image: url("../../../../assets/images/cloud2.svg");
+        z-index: 30;
+      }
+      &.cloud5 {
+        top: 40%;
+        left: 61.5%;
+        background-image: url("../../../../assets/images/cloud3.svg");
+        z-index: 30;
+      }
     }
   }
 }
