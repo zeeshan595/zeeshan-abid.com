@@ -2,7 +2,7 @@ import * as React from "react";
 import "./Style.scss";
 
 export interface IIntroProps {
-
+  Info?: string[]
 }
 
 export interface IIntroState {
@@ -41,9 +41,13 @@ class Intro extends React.Component<IIntroProps, IIntroState>
           <div className="seperator"></div>
           <div className="seperator right"></div>
           <p className="info">
-            Full stack developer <br />
-            Games developer <br />
-            Technology enthusiast
+            {
+              this.props.Info.map(i => (
+                <React.Fragment>
+                  {i}<br/>
+                </React.Fragment>
+              ))
+            }
           </p>
         </div>
         <div className="moonContainer">

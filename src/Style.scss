@@ -1,6 +1,14 @@
 html {
   scroll-behavior: smooth !important;
 }
+h1 {
+  color: white;
+  font-weight: normal;
+  font-size: 80px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
 body {
   font-family: Roboto;
   color: rgb(60, 60, 60);
@@ -36,7 +44,7 @@ body {
 
 .backgroundStars {
   display: block;
-  position: absolute;
+  position: fixed;
   top: 70px;
   left: 380px;
   width: 1300px;

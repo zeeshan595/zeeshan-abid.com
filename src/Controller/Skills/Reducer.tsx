@@ -1,21 +1,11 @@
 import { Action } from "redux";
-import INavigation from "../../Model/Navigation";
-import Homepage from "../../View/Homepage/Homepage";
 import ISkill from "../../Model/Skills";
 
-export interface INavigationState {
-  Navigation: INavigation[]
+export interface ISkillsState {
   Skills: ISkill[]
 }
 
-export const defaultState: INavigationState = {
-  Navigation: [
-    {
-      Path: "/",
-      Component: Homepage,
-      exact: true
-    }
-  ],
+export const defaultState: ISkillsState = {
   Skills: [
     {
       Name: "Front-End Development",
@@ -74,6 +64,6 @@ export const defaultState: INavigationState = {
   ]
 };
 
-export default (state: INavigationState = defaultState, action: Action): INavigationState => {
+export default (state: ISkillsState = defaultState, action: Action): ISkillsState => {
   return state;
 };
