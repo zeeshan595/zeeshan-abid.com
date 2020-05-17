@@ -2,6 +2,8 @@
   margin-bottom: 300px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 200;
   .content {
     padding-left: 100px;
     .skillInfoContainer {

@@ -1,7 +1,9 @@
-.experience {
-  margin-bottom: 300px;
+.experiences {
+  margin-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 200;
   .content {
     padding-left: 100px;
     .experienceContainer {
@@ -9,7 +11,11 @@
       .experience {
         padding: 20px;
         width: calc(100% - 100px);
-        min-height: 200px;
+        min-height: 100px;
+        min-width: 240px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
         border-radius: 10px;
         background-color: white;
         .titleAndCompany {
@@ -33,6 +39,16 @@
         .location {
           position: relative;
           margin-top: 10px;
+          .duration {
+            margin-left: 30px;
+            text-transform: uppercase;
+            @media only screen and (max-width: 501px) {
+              display: block;
+              margin-left: 0;
+              margin-top: 10px;
+              margin-bottom: 10px;
+            }
+          }
         }
       }
     }

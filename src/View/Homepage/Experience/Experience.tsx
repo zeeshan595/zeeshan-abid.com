@@ -10,23 +10,32 @@ export interface IExperienceState {}
 
 class Experience extends React.Component<IExperienceProps, IExperienceState> {
   render() {
+    const experiences = this.props.Experience.map((experience, index) => (
+      <div className="experience" key={index}>
+        <div className="titleAndCompany">
+          <span className="jobTitle">{experience.JobTitle}</span>
+          @
+          <span className="company">{experience.Company}</span>
+        </div>
+        <div className="location">
+          {experience.Location}
+          <span className="duration">
+            {experience.StartAt} - {experience.EndAt}
+          </span>
+        </div>
+        <p className="description">
+          {experience.Description}
+        </p>
+      </div>
+    ));
     return (
-      <div className="experience">
+      <div className="experiences">
         <div className="content">
           <h1>Experience</h1>
           <div className="seperator"></div>
           <div className="seperator right"></div>
           <div className="experienceContainer">
-            <div className="experience">
-              <div className="titleAndCompany">
-                <span className="jobTitle">Full Stack Developer</span>
-                @
-                <span className="company">Waracle</span>
-              </div>
-              <div className="location">
-                Glasgow, UK
-              </div>
-            </div>
+            {experiences}
           </div>
         </div>
       </div>

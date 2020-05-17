@@ -1,6 +1,8 @@
 .intro {
   height: 100vh;
   min-height: 800px;
+  position: relative;
+  z-index: 200;
   .content {
     padding-top: 250px;
     padding-left: 100px;
@@ -23,31 +25,6 @@
       font-size: 21px;
       font-weight: normal;
       line-height: 30px;
-    }
-  }
-
-  .scrollDown {
-    position: fixed;
-    left: -100px;
-    bottom: 150px;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-
-    span {
-      color: white;
-      letter-spacing: 5px;
-    }
-    .line {
-      display: inline-block;
-      width: 150px;
-      height: 5px;
-      background: white;
-      margin-left: 20px;
-      margin-bottom: 3px;
-      border-radius: 5px;
     }
   }
 
