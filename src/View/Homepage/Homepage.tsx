@@ -3,6 +3,7 @@ import Intro from "./Intro"
 import Skills from "./Skills"
 import Experience from "./Experience";
 import Projects from "./Projects";
+import Education from "./Education";
 
 export interface IHomepageProps {
 
@@ -21,6 +22,7 @@ class Homepage extends React.Component<IHomepageProps, IHomepageState>
         <Skills />
         <Experience />
         <Projects />
+        <Education />
         <div className="backgroundStars"></div>
         <div className="backgroundSky"></div>
         <div className="moonlight"></div>
