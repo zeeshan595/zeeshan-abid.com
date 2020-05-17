@@ -43,7 +43,7 @@ class Intro extends React.Component<IIntroProps, IIntroState>
           <p className="info">
             {
               this.props.Info.map(i => (
-                <React.Fragment>
+                <React.Fragment key={i}>
                   {i}<br/>
                 </React.Fragment>
               ))

@@ -1,30 +1,38 @@
-.skills {
+.experience {
+  margin-bottom: 300px;
   margin-left: auto;
   margin-right: auto;
-  max-width: calc(100% - 200px);
   .content {
-    .skillInfoContainer {
+    padding-left: 100px;
+    .experienceContainer {
       margin-top: 100px;
-      margin-bottom: 100px;
-      text-align: center;
-      .skillInfo {
-        display: inline-block;
-        width: 200px;
-        min-height: 300px;
-        background-color: white;
-        vertical-align: top;
+      .experience {
+        padding: 20px;
+        width: calc(100% - 100px);
+        min-height: 200px;
         border-radius: 10px;
-        margin: 20px;
-        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.25);
-        .skillInfoHeading {
-          text-align: center;
-          padding: 10px;
+        background-color: white;
+        .titleAndCompany {
+          position: relative;
           font-weight: bold;
-          color: rgba(82, 82, 82, 1);
-          border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+          .jobTitle {
+            display: inline-block;
+            margin-right: 10px;
+            font-weight: normal;
+            font-style: italic;
+            font-size: 20px;
+          }
+          .company {
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 20px;
+            font-weight: normal;
+            color: rgba(82, 82, 82, 1);
+          }
         }
-        .info {
-          margin: 15px;
+        .location {
+          position: relative;
+          margin-top: 10px;
         }
       }
     }

@@ -16,6 +16,9 @@ const store = createStore(
   RootReducer,
   applyMiddleware(...middleware)
 );
+window.setInterval(() => {
+  
+}, 100);
 
 const appWithProvider = (
   <Provider store={store}>
