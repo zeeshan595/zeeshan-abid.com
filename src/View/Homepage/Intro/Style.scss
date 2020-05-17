@@ -41,6 +41,21 @@
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
       }
     }
+    .linkedIn {
+      display: block;
+      width: 130px;
+      margin-top: 10px;
+      font-size: 20px;
+      text-decoration: none;
+      color: black;
+      border-radius: 20px;
+      padding: 10px 15px;
+      background-color: white;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+      &:hover {
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+      }
+    }
   }
 
   .moonContainer {

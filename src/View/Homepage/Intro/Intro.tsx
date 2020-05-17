@@ -29,6 +29,7 @@ class Intro extends React.Component<IIntroProps, IIntroState>
             }
           </p>
           <a className="github" href="https://github.com/zeeshan595">View GitHub</a>
+          <a className="linkedIn" href="https://www.linkedin.com/in/zeeshan595/">View Linked In</a>
         </div>
         <div className="moonContainer">
           <span>Portfolio</span>
