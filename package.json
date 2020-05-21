@@ -7,8 +7,9 @@
     "start": "node server/index.js",
     "develop": "webpack-dev-server --mode development --config webpack.config.js",
     "build": "webpack --mode production --config webpack.config.js && cp -r assets dist/assets",
-    "deploy": "npm run build && gcloud app deploy",
-    "browse": "gcloud app browse"
+    "deploy": "npm run build && gcloud app deploy && npm run clean",
+    "browse": "gcloud app browse",
+    "clean": "rm -r dist"
   },
   "author": "Zeeshan Abid",
   "license": "MIT",

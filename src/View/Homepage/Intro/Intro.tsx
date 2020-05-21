@@ -2,34 +2,41 @@ import * as React from "react";
 import "./Style.scss";
 
 export interface IIntroProps {
-  Info?: string[]
+  Info?: string[];
 }
 
-export interface IIntroState {
-}
+export interface IIntroState {}
 
-class Intro extends React.Component<IIntroProps, IIntroState>
-{
+class Intro extends React.Component<IIntroProps, IIntroState> {
   render() {
     return (
       <div className="intro">
         <div className="content">
-          <h1>
-            Zeeshan Abid
-          </h1>
+          <h1>Zeeshan Abid</h1>
           <div className="seperator"></div>
           <div className="seperator right"></div>
           <p className="info">
-            {
-              this.props.Info.map(i => (
-                <React.Fragment key={i}>
-                  {i}<br/>
-                </React.Fragment>
-              ))
-            }
+            {this.props.Info.map((i) => (
+              <React.Fragment key={i}>
+                {i}
+                <br />
+              </React.Fragment>
+            ))}
           </p>
-          <a className="github" href="https://github.com/zeeshan595">View GitHub</a>
-          <a className="linkedIn" href="https://www.linkedin.com/in/zeeshan595/">View Linked In</a>
+          <a
+            className="github"
+            href="https://github.com/zeeshan595"
+            target="_blank"
+          >
+            View GitHub
+          </a>
+          <a
+            className="linkedIn"
+            href="https://www.linkedin.com/in/zeeshan595/"
+            target="_blank"
+          >
+            View Linked In
+          </a>
         </div>
         <div className="moonContainer">
           <span>Portfolio</span>

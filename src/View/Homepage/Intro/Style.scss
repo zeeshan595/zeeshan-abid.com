@@ -1,11 +1,11 @@
 .intro {
-  height: 100vh;
-  min-height: 800px;
   position: relative;
+  min-height: 800px;
+  margin-bottom: 50px;
   z-index: 200;
   .content {
     padding-top: 250px;
-    padding-left: 100px;
+    padding-left: 30px;
 
     @media screen and (max-width: 1020px) {
       max-width: 400px;
@@ -28,32 +28,40 @@
     }
     .github {
       display: block;
-      width: 110px;
+      width: 140px;
       margin-top: 10px;
       font-size: 20px;
       text-decoration: none;
+      text-align: center;
       color: black;
       border-radius: 20px;
       padding: 10px 15px;
-      background-color: white;
+      background-color: rgba(230, 230, 230, 1);
       box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+      transition: 0.5s;
+
       &:hover {
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+        background-color: rgba(255, 255, 255, 1);
       }
     }
     .linkedIn {
       display: block;
-      width: 130px;
+      width: 140px;
       margin-top: 10px;
       font-size: 20px;
       text-decoration: none;
+      text-align: center;
       color: black;
       border-radius: 20px;
       padding: 10px 15px;
-      background-color: white;
+      background-color: rgba(230, 230, 230, 1);
       box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+      transition: 0.5s;
+      
       &:hover {
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+        background-color: rgba(255, 255, 255, 1);
       }
     }
   }

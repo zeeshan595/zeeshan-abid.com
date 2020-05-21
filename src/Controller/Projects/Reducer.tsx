@@ -9,7 +9,7 @@ export const defaultState: IProjectsState = {
   Projects: [
     {
       Name: "Portfolio Website",
-      Description: "This website was created in react to be fully responsive on multiple screen sizes and leverage MVC framework",
+      Description: "This website was created in react with MVC framework. In addition, it also has a CI/CD pipeline with GitHub Actions and is deployed using google cloud platform.",
       GitHub: "https://github.com/zeeshan595/zeeshan-abid.com",
       Image: "/assets/images/react.png",
       ImageAlt: "react"
