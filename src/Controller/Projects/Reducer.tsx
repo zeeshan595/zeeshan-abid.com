@@ -8,6 +8,13 @@ export interface IProjectsState {
 export const defaultState: IProjectsState = {
   Projects: [
     {
+      Name: "Machine Learning",
+      Description: "In my university I created my own custom neural network library using C++ and used this library to compare different techniques to train the neural network (BP, PSO, GA).",
+      GitHub: "https://github.com/zeeshan595/Neural-Network",
+      Image: "https://raw.githubusercontent.com/tortuga-foundation/tortuga/master/Assets/Images/Render/machine-learning.jpg",
+      ImageAlt: "machine-learning"
+    },
+    {
       Name: "Portfolio Website",
       Description: "This website was created in react with MVC framework. In addition, it also has a CI/CD pipeline with GitHub Actions and is deployed using google cloud platform.",
       GitHub: "https://github.com/zeeshan595/zeeshan-abid.com",
