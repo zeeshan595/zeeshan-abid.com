@@ -10,7 +10,7 @@ export const defaultState: IProjectsState = {
     {
       Name: "Machine Learning",
       Description: "In my university I created my own custom neural network library using C++ and used this library to compare different techniques to train the neural network (BP, PSO, GA).",
-      GitHub: "https://github.com/zeeshan595/Neural-Network",
+      GitHub: "https://github.com/zeeshan595/Neural-Network/blob/master/Honours%20Project.pdf",
       Image: "https://raw.githubusercontent.com/tortuga-foundation/tortuga/master/Assets/Images/Render/machine-learning.jpg",
       ImageAlt: "machine-learning"
     },
