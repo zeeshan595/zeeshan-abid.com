@@ -28,7 +28,7 @@ export const defaultState: IExperienceState = {
       Location: "Dundee, UK",
       JobTitle: "Games Programmer",
       StartAt: "January 2018",
-      EndAt: "September 2019",
+      EndAt: "September 2018",
       Description: "Had a wonderful time working with a team of talented developers in bringing to life multiple projects. Including being the lead developer in a unity 3d  mobile app. I was also responsible for programming the front end and back end of a children’s learning application with an online console for teachers."
     }
   ]
