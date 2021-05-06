@@ -1,0 +1,30 @@
+.socials .resume {
+  display: none;
+}
+@media only screen and (max-width: 500px) {
+  .socials .resume {
+    display: inline-block;
+  }
+}
+
+h2 {
+  margin: 0;
+  font-size: 40px;
+}
+p {
+  font-size: 20px;
+}
+
+.socials {
+  margin-top: 20px;
+}
+.socials a {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.socials a img {
+  max-width: 50px;
+  max-height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+}
