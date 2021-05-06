@@ -7,6 +7,10 @@ import './App.css';
 function App() {
   return (
     <div className="app">
+      <div className="nav-bar">
+        <a href="#skill">Skills</a>
+        <a href="#experience">Experience</a>
+      </div>
       <div className="title">
         <div className="column">
           <Title />

@@ -26,7 +26,7 @@ import PostmanPng from './assets/postman.png';
 
 function Skills() {
   return (
-    <div>
+    <div id="skill">
       <h2 className="skill-container-heading">Skills</h2>
       <div className="skill-container">
         <img src={ReactPng} alt="react" data-tip="React" />

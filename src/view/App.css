@@ -4,7 +4,6 @@
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
-  
 }
 
 .app .title {
@@ -19,4 +18,26 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
+}
+
+.nav-bar {
+  display: block;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  margin-top: 40px;
+}
+
+.nav-bar a {
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.nav-bar a:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
 }
