@@ -1,0 +1,19 @@
+.experience-heading {
+  display: block;
+  text-align: center;
+}
+
+.experience-container {
+  display: block;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 100%;
+}
+
+.timeline .container {
+  
+}

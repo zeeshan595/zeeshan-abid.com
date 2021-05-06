@@ -1,16 +1,22 @@
 import Title from './title/Title';
 import Resume from './resume/Resume';
+import Skills from './skills/Skills';
+import Experience from './experience/Experience';
 import './App.css';
 
 function App() {
   return (
     <div className="app">
-      <div className="column">
-        <Title />
+      <div className="title">
+        <div className="column">
+          <Title />
+        </div>
+        <div className="column">
+          <Resume />
+        </div>
       </div>
-      <div className="column">
-        <Resume />
-      </div>
+      <Skills />
+      <Experience />
     </div>
   );
 }
