@@ -39,13 +39,13 @@ function Skills() {
         <img src={DotNetPng} alt="dot net" data-tip=".Net Core" />
         <img src={NodeJsPng} alt="nodejs" data-tip="NodeJs" />
         <img src={RabbitMqPng} alt="rabbit mq" data-tip="Rabbit MQ" />
+        <img src={GraphQlPng} alt="graph ql" data-tip="GraphQL" />
         <img
           src={EntityFrameworkPng}
           alt="entity framework"
           data-tip="Entity Framework"
         />
         <img src={TypeOrmPng} alt="type orm" data-tip="Type ORM" />
-        <img src={GraphQlPng} alt="graph ql" data-tip="GraphQL" />
         <img src={AzurePortalPng} alt="azure portal" data-tip="Azure Portal" />
         <img src={AzureDevopsPng} alt="azure devops" data-tip="Azure Dev Ops" />
         <img src={YamlPng} alt="yaml" data-tip="Yaml" />
