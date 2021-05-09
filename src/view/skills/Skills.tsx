@@ -23,6 +23,7 @@ import DockerPng from './assets/docker.png';
 import EsLintPng from './assets/es-lint.png';
 import ResharperPng from './assets/resharper.png';
 import PostmanPng from './assets/postman.png';
+import GraphQlPng from './assets/graphql.png';
 
 function Skills() {
   return (
@@ -44,6 +45,7 @@ function Skills() {
           data-tip="Entity Framework"
         />
         <img src={TypeOrmPng} alt="type orm" data-tip="Type ORM" />
+        <img src={GraphQlPng} alt="graph ql" data-tip="GraphQL" />
         <img src={AzurePortalPng} alt="azure portal" data-tip="Azure Portal" />
         <img src={AzureDevopsPng} alt="azure devops" data-tip="Azure Dev Ops" />
         <img src={YamlPng} alt="yaml" data-tip="Yaml" />
