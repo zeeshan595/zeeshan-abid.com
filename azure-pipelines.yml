@@ -3,12 +3,14 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
+  demands: Limit -equals DisAbleParallel 
 
 stages:
   - stage: 
     displayName: 'CI'
     jobs:
-      - job: 
+      - job:
+        strategy: 
         displayName: 'Install Packages'
         steps:
           - task: Npm@1
