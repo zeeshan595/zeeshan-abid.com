@@ -10,7 +10,6 @@ stages:
     displayName: 'CI'
     jobs:
       - job:
-        strategy: 
         displayName: 'Install Packages'
         steps:
           - task: Npm@1
