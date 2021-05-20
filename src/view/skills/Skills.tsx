@@ -1,3 +1,4 @@
+import React from 'react';
 import './Skills.css';
 import ReactTooltip from 'react-tooltip';
 import ReactPng from './assets/react.svg';

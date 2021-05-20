@@ -8,6 +8,11 @@
     "**/.DS_Store": true,
     "dist/": true,
     "node_modules": true,
-    "package-lock.json": true
+    "package-lock.json": true,
+    "globals.d.ts": true,
+    "staticwebapp.config.json": true,
+    "webpack.config.js": true,
+    ".prettierrc": true,
+    ".gitignore": true
   }
 }
