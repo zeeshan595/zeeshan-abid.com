@@ -1,19 +1,36 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
 - master
 
 pool:
   vmImage: ubuntu-latest
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+stages:
+  - stage: 
+    displayName: 'CI'
+    variables:
+    jobs:
+      - job: 
+        displayName: 'Install Packages'
+        steps:
+          - task: Npm@1
+            inputs:
+              command: 'install'
+          - task: Npm@1
+            inputs:
+              command: 'custom'
+              customCommand: 'build'
+          - task: AzureFileCopy@4
+            inputs:
+              SourcePath: 'dist'
+              azureSubscription: 'Pay-As-You-Go(83d957fb-f04e-4e3e-9b1c-180bb7c9eb71)'
+              Destination: 'AzureBlob'
+              storage: 'zeeshanabidweb'
+              ContainerName: '$web'
+          - task: AzureFileCopy@4
+            inputs:
+              SourcePath: 'assets'
+              azureSubscription: 'Pay-As-You-Go(83d957fb-f04e-4e3e-9b1c-180bb7c9eb71)'
+              Destination: 'AzureBlob'
+              storage: 'zeeshanabidweb'
+              ContainerName: '$web'
+              BlobPrefix: 'assets'
