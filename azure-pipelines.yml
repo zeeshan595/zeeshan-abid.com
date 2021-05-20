@@ -3,34 +3,31 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
-  demands: Limit -equals DisAbleParallel 
 
-stages:
-  - stage: 
-    displayName: 'CI'
-    jobs:
-      - job:
-        displayName: 'Install Packages'
-        steps:
-          - task: Npm@1
-            inputs:
-              command: 'install'
-          - task: Npm@1
-            inputs:
-              command: 'custom'
-              customCommand: 'build'
-          - task: AzureFileCopy@4
-            inputs:
-              SourcePath: 'dist'
-              azureSubscription: 'Pay-As-You-Go(83d957fb-f04e-4e3e-9b1c-180bb7c9eb71)'
-              Destination: 'AzureBlob'
-              storage: 'zeeshanabidweb'
-              ContainerName: '$web'
-          - task: AzureFileCopy@4
-            inputs:
-              SourcePath: 'assets'
-              azureSubscription: 'Pay-As-You-Go(83d957fb-f04e-4e3e-9b1c-180bb7c9eb71)'
-              Destination: 'AzureBlob'
-              storage: 'zeeshanabidweb'
-              ContainerName: '$web'
-              BlobPrefix: 'assets'
+
+jobs:
+  - job:
+    displayName: 'Install Packages'
+    steps:
+      - task: Npm@1
+        inputs:
+          command: 'install'
+      - task: Npm@1
+        inputs:
+          command: 'custom'
+          customCommand: 'build'
+      - task: AzureFileCopy@4
+        inputs:
+          SourcePath: 'dist'
+          azureSubscription: 'Pay-As-You-Go(83d957fb-f04e-4e3e-9b1c-180bb7c9eb71)'
+          Destination: 'AzureBlob'
+          storage: 'zeeshanabidweb'
+          ContainerName: '$web'
+      - task: AzureFileCopy@4
+        inputs:
+          SourcePath: 'assets'
+          azureSubscription: 'Pay-As-You-Go(83d957fb-f04e-4e3e-9b1c-180bb7c9eb71)'
+          Destination: 'AzureBlob'
+          storage: 'zeeshanabidweb'
+          ContainerName: '$web'
+          BlobPrefix: 'assets'
