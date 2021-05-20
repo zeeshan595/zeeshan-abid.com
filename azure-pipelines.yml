@@ -7,7 +7,6 @@ pool:
 stages:
   - stage: 
     displayName: 'CI'
-    variables:
     jobs:
       - job: 
         displayName: 'Install Packages'
