@@ -14,12 +14,14 @@ stages:
           - task: Bash@3
             displayName: "Install Packages"
             inputs:
+              noRc: false
               targetType: 'inline'
               script: |
                 npm install
           - task: Bash@3
             displayName: "Build Project"
             inputs:
+              noRc: false
               targetType: 'inline'
               script: |
                 npm run build
