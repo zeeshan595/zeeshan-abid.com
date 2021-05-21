@@ -33,3 +33,8 @@ stages:
                 --account-name $(storageAccount) `
                 --source 'dist' `
                 --destination '$web'
+                az storage blob upload-batch `
+                --subscription $(subscriptionId) `
+                --account-name $(storageAccount) `
+                --source 'assets' `
+                --destination '$web/assets'
