@@ -6,26 +6,20 @@ pool: 'default'
 
 stages:
   - stage: 
-    displayName: 'Build & Deploy'
+    displayName: 'Build'
     jobs:
       - job:
-        displayName: 'Build & Deploy'
+        displayName: 'Build'
         steps:
           - task: Bash@3
             displayName: "Install Packages"
             inputs:
               targetType: 'inline'
               script: |
-                export NVM_DIR="$HOME/.nvm"
-                [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-                [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
                 npm install
           - task: Bash@3
             displayName: "Build Project"
             inputs:
               targetType: 'inline'
               script: |
-                export NVM_DIR="$HOME/.nvm"
-                [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-                [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
                 npm run build
