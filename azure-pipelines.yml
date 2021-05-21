@@ -7,6 +7,8 @@ pool: 'default'
 stages:
   - stage: 
     displayName: 'Deploy'
+    variables:
+      - group: "Prod"
     jobs:
       - job:
         displayName: 'Build & Deploy'
@@ -26,4 +28,8 @@ stages:
             inputs:
               targetType: 'inline'
               script: |
-                echo 'Hello World'
+                az storage blob upload-batch `
+                --subscription $(subscriptionId) `
+                --account-name $(storageAccount) `
+                --source 'dist' `
+                --destination '$web'
