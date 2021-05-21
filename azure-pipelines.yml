@@ -28,13 +28,16 @@ stages:
             inputs:
               targetType: 'inline'
               script: |
-                az storage blob upload-batch `
-                --subscription $(subscriptionId) `
-                --account-name $(storageAccount) `
-                --source 'dist' `
+                # deploy new build
+                az storage blob upload-batch \
+                --subscription $(subscriptionId) \
+                --account-name $(storageAccount) \
+                --source 'dist' \
                 --destination '$web'
-                az storage blob upload-batch `
-                --subscription $(subscriptionId) `
-                --account-name $(storageAccount) `
-                --source 'assets' `
+
+                # upload assets
+                az storage blob upload-batch \
+                --subscription $(subscriptionId) \
+                --account-name $(storageAccount) \
+                --source 'assets' \
                 --destination '$web/assets'
