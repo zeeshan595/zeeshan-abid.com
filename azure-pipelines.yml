@@ -1,22 +1,21 @@
 trigger:
-- master
+  - master
 
-pool: 'default'
-
+pool: "default"
 
 stages:
-  - stage: 
-    displayName: 'Deploy'
+  - stage:
+    displayName: "Deploy"
     variables:
       - group: "Prod"
     jobs:
       - job:
-        displayName: 'Build & Deploy'
+        displayName: "Build & Deploy"
         steps:
           - task: Bash@3
             displayName: "Build"
             inputs:
-              targetType: 'inline'
+              targetType: "inline"
               script: |
                 export NVM_DIR="$HOME/.nvm"
                 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -26,7 +25,7 @@ stages:
           - task: Bash@3
             displayName: "Deploy"
             inputs:
-              targetType: 'inline'
+              targetType: "inline"
               script: |
                 # deploy new build
                 az storage blob upload-batch \
@@ -41,3 +40,14 @@ stages:
                 --account-name $(storageAccount) \
                 --source 'assets' \
                 --destination '$web/assets'
+          - task: Bash@3
+            displayName: "Update Settings"
+            inputs:
+              targetType: "inline"
+              script: |
+                az storage blob service-properties update \
+                --subscription $(subscriptionId) \
+                --account-name $(storageAccount) \
+                --static-website \
+                --404-document index.html \
+                --index-document index.html
