@@ -35,11 +35,10 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  max-width: 1200px;
-  min-width: 800px;
+  max-width: 800px;
   margin-left: 30px;
   margin-right: 30px;
-  margin-top: 40px;
+  margin-top: 150px;
 }
 
 p,

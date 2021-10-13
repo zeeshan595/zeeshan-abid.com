@@ -175,8 +175,8 @@ export default defineComponent({
 
       const rect = tooltip.getBoundingClientRect();
 
-      const x = e.clientX - (rect.width / 2);
-      const y = e.clientY - rect.height - 10;
+      const x = e.clientX - rect.width / 2;
+      const y = e.clientY - rect.height;
 
       tooltip.style.left = `${x}px`;
       tooltip.style.top = `${y}px`;
@@ -197,9 +197,10 @@ h2 {
   position: relative;
   margin-top: 40px;
   gap: 20px;
+  justify-content: center;
   img {
     display: inline-block;
-    max-height: 140px;
+    max-height: 160px;
   }
   #tooltip {
     display: flex;
@@ -210,6 +211,7 @@ h2 {
     padding: 10px 15px;
     border-radius: 15px;
     opacity: 0;
+    pointer-events: none;
 
     &.visible {
       opacity: 1;

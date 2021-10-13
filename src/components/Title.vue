@@ -12,6 +12,9 @@
         <a href="https://github.com/zeeshan595" target="_blank">
           <img src="@/assets/github.png" alt="linked-in" />
         </a>
+        <a class="mobile-only" href="./resume.pdf" target="_blank">
+          <img src="@/assets/resume.png" alt="resume" />
+        </a>
       </div>
     </div>
     <a class="right" href="./resume.pdf" target="_blank">
@@ -78,12 +81,24 @@ export default defineComponent({
           border-radius: 7px;
         }
       }
+      .mobile-only {
+        display: none;
+      }
+      @media screen and (max-width: 500px) {
+        .mobile-only {
+          display: flex;
+        }
+      }
     }
   }
   .right {
     display: flex;
     flex-basis: 60%;
     max-width: 500px;
+
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
 
     .resume {
       display: flex;
