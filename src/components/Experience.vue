@@ -34,9 +34,15 @@ export default defineComponent({
     return {
       events: [
         {
-          date: 'April 19 - May 21',
-          title: 'Software Engineer',
-          company: 'Waracle',
+          date: 'October 21 - Present',
+          title: 'Full-Stack Developer',
+          company: 'Holo',
+          info: ''
+        },
+        {
+          date: 'May 21 - October 21',
+          title: 'Senior Full-Stack Developer',
+          company: 'Cox Automotive',
           info: ''
         },
         {
