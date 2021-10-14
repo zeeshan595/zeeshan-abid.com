@@ -5,146 +5,10 @@
       {{ tooltipText }}
     </div>
     <img
-      src="@/assets/skills/react.svg"
-      alt="react"
-      @mouseenter="showTooltip"
-      @mouseleave="hideTooltip"
-    />
-    <img
-      src="@/assets/skills/angular.png"
-      alt="angular"
-      @mouseenter="showTooltip"
-      @mouseleave="hideTooltip"
-    />
-    <img
-      src="@/assets/skills/redux.png"
-      alt="redux"
-      @mouseenter="showTooltip"
-      @mouseleave="hideTooltip"
-    />
-    <img
-      src="@/assets/skills/rxjs.png"
-      alt="rxjs"
-      @mouseenter="showTooltip"
-      @mouseleave="hideTooltip"
-    />
-    <img
-      src="@/assets/skills/typescript.png"
-      alt="typescript"
-      @mouseenter="showTooltip"
-      @mouseleave="hideTooltip"
-    />
-    <img
-      src="@/assets/skills/sass.png"
-      alt="sass"
-      @mouseenter="showTooltip"
-      @mouseleave="hideTooltip"
-    />
-    <img
-      src="@/assets/skills/dotnet.png"
-      alt="dotnet"
-      @mouseenter="showTooltip"
-      @mouseleave="hideTooltip"
-    />
-    <img
-      src="@/assets/skills/nodejs.jpg"
-      alt="nodejs"
-      @mouseenter="showTooltip"
-      @mouseleave="hideTooltip"
-    />
-    <img
-      src="@/assets/skills/rabbitmq.png"
-      alt="rabbitmq"
-      @mouseenter="showTooltip"
-      @mouseleave="hideTooltip"
-    />
-    <img
-      src="@/assets/skills/entity-framework.png"
-      alt="entity-framework"
-      @mouseenter="showTooltip"
-      @mouseleave="hideTooltip"
-    />
-    <img
-      src="@/assets/skills/typeorm.png"
-      alt="typeorm"
-      @mouseenter="showTooltip"
-      @mouseleave="hideTooltip"
-    />
-    <img
-      src="@/assets/skills/azure.png"
-      alt="azure"
-      @mouseenter="showTooltip"
-      @mouseleave="hideTooltip"
-    />
-    <img
-      src="@/assets/skills/dev-ops.png"
-      alt="dev-ops"
-      @mouseenter="showTooltip"
-      @mouseleave="hideTooltip"
-    />
-    <img
-      src="@/assets/skills/yaml.png"
-      alt="yaml"
-      @mouseenter="showTooltip"
-      @mouseleave="hideTooltip"
-    />
-    <img
-      src="@/assets/skills/azure-cli.png"
-      alt="azure-cli"
-      @mouseenter="showTooltip"
-      @mouseleave="hideTooltip"
-    />
-    <img
-      src="@/assets/skills/gcs.png"
-      alt="google cloud platform"
-      @mouseenter="showTooltip"
-      @mouseleave="hideTooltip"
-    />
-    <img
-      src="@/assets/skills/git.png"
-      alt="git"
-      @mouseenter="showTooltip"
-      @mouseleave="hideTooltip"
-    />
-    <img
-      src="@/assets/skills/bash.png"
-      alt="bash"
-      @mouseenter="showTooltip"
-      @mouseleave="hideTooltip"
-    />
-    <img
-      src="@/assets/skills/powershell.png"
-      alt="powershell"
-      @mouseenter="showTooltip"
-      @mouseleave="hideTooltip"
-    />
-    <img
-      src="@/assets/skills/docker.png"
-      alt="docker"
-      @mouseenter="showTooltip"
-      @mouseleave="hideTooltip"
-    />
-    <img
-      src="@/assets/skills/es-lint.png"
-      alt="es-lint"
-      @mouseenter="showTooltip"
-      @mouseleave="hideTooltip"
-    />
-    <img
-      src="@/assets/skills/resharper.png"
-      alt="resharper"
-      @mouseenter="showTooltip"
-      @mouseleave="hideTooltip"
-    />
-    <img
-      src="@/assets/skills/postman.png"
-      alt="postman"
-      @mouseenter="showTooltip"
-      @mouseleave="hideTooltip"
-    />
-    <img
-      src="@/assets/skills/graphql.png"
-      alt="graphql"
+      v-for="(skill, index) in skills"
+      :key="index"
+      :src="skill.image"
+      :alt="skill.text"
       @mouseenter="showTooltip"
       @mouseleave="hideTooltip"
     />
@@ -154,11 +18,110 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 
+export type Skill = {
+  image: string;
+  text: string;
+};
+
 export default defineComponent({
   name: 'Skills',
   data() {
     return {
-      tooltipText: ''
+      tooltipText: '',
+      skills: [
+        {
+          image: '/img/skills/react.svg',
+          text: 'React'
+        },
+        {
+          image: '/img/skills/angular.png',
+          text: 'Angular'
+        },
+        {
+          image: '/img/skills/redux.png',
+          text: 'Redux'
+        },
+        {
+          image: '/img/skills/rxjs.png',
+          text: 'RxJs'
+        },
+        {
+          image: '/img/skills/typescript.png',
+          text: 'Typescript'
+        },
+        {
+          image: '/img/skills/sass.png',
+          text: 'SASS'
+        },
+        {
+          image: '/img/skills/dotnet.png',
+          text: '.Net'
+        },
+        {
+          image: '/img/skills/nodejs.jpg',
+          text: 'NodeJs'
+        },
+        {
+          image: '/img/skills/rabbitmq.png',
+          text: 'RabbitMq'
+        },
+        {
+          image: '/img/skills/entity-framework.png',
+          text: 'Entity Framework'
+        },
+        {
+          image: '/img/skills/typeorm.png',
+          text: 'Type ORM'
+        },
+        {
+          image: '/img/skills/azure.png',
+          text: 'Azure'
+        },
+        {
+          image: '/img/skills/dev-ops.png',
+          text: 'Dev Ops'
+        },
+        {
+          image: '/img/skills/yaml.png',
+          text: 'yaml'
+        },
+        {
+          image: '/img/skills/azure-cli.png',
+          text: 'Azure CLI'
+        },
+        {
+          image: '/img/skills/gcs.png',
+          text: 'Google Cloud Platform'
+        },
+        {
+          image: '/img/skills/git.png',
+          text: 'Git'
+        },
+        {
+          image: '/img/skills/bash.png',
+          text: 'Bash'
+        },
+        {
+          image: '/img/skills/powershell.png',
+          text: 'Powershell'
+        },
+        {
+          image: '/img/skills/docker.png',
+          text: 'Docker'
+        },
+        {
+          image: '/img/skills/es-lint.png',
+          text: 'ES Lint'
+        },
+        {
+          image: '/img/skills/postman.png',
+          text: 'Postman'
+        },
+        {
+          image: '/img/skills/graphql.png',
+          text: 'Graph QL'
+        }
+      ] as Skill[]
     };
   },
   methods: {
@@ -171,12 +134,12 @@ export default defineComponent({
     },
     updateMousePosition(e: MouseEvent): void {
       const tooltip = document.getElementById('tooltip');
-      if (!tooltip) return;
-
+      if (!tooltip || !tooltip.parentElement) return;
       const rect = tooltip.getBoundingClientRect();
+      const parentRect = tooltip.parentElement.getBoundingClientRect();
 
-      const x = e.clientX - rect.width / 2;
-      const y = e.clientY - rect.height;
+      const x = e.clientX - rect.width / 2 - parentRect.x;
+      const y = e.clientY - rect.height - parentRect.y;
 
       tooltip.style.left = `${x}px`;
       tooltip.style.top = `${y}px`;
@@ -204,7 +167,7 @@ h2 {
   }
   #tooltip {
     display: flex;
-    position: fixed;
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
     color: white;
