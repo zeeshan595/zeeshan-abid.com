@@ -13,6 +13,11 @@
         </div>
         <h3>{{ item.title }}</h3>
         <h4>{{ item.company }}</h4>
+        <ul>
+          <li v-for="(info, index) in item.info" :key="index">
+            <p>{{ info }}</p>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -25,7 +30,7 @@ export type Event = {
   date: string;
   title: string;
   company: string;
-  info: string;
+  info: string[];
 };
 
 export default defineComponent({
@@ -43,31 +48,61 @@ export default defineComponent({
           date: 'May 21 - October 21',
           title: 'Senior Full-Stack Developer',
           company: 'Cox Automotive',
-          info: ''
+          info: [
+            'Lead a team of developers to complete objectives',
+            'Created Multi staged CI / CD pipelines',
+            'Lowered costs on Azure by using best practicies',
+            'Monitored services using application insights and new relic',
+            'Created Proof of Concepts for product owner'
+          ]
         },
         {
           date: 'April 19 - May 21',
           title: 'Software Engineer',
           company: 'Waracle',
-          info: ''
+          info: [
+            'Used Azure Dev Ops to Setup a CI/CD Pipeline',
+            'Used Angular to develop front-end for several projects',
+            'Used Typescript NodeJS to maintain different projects',
+            'Managed resources in Azure Portal through ARM',
+            'Monitored services using application insights & Sentry',
+            'Communicating with the client on project requirements',
+            'Used C# .NET Core to develop back-end web API',
+            'Performed database migrations and maintained different database (Azure SQL, MySQL)',
+            'Wrote Unit tests using JEST and XUnit',
+            'Integrated postman unit testing with CI/CD pipeline',
+            'Setup Azure B2C Custom XML Policies for a project',
+            'Working with python, running on RabitMQ'
+          ]
         },
         {
           date: 'September 18 - April 19',
           title: 'Web Developer',
           company: 'Waracle',
-          info: ''
+          info: [
+            'Used typescript with NodeJs to build in-house tools for better productivity',
+            'Worked on the front-end for multiple projects using React, SASS, javascript, and HTML',
+            'Managed MySQL back-end server'
+          ]
         },
         {
           date: 'December 17 - September 18',
           title: 'Games Programmer',
           company: 'Hyper Luminal Games',
-          info: ''
+          info: [
+            'Worked on a 3D application using Unity3D',
+            'Build a front-end application using React',
+            'Integrated Firebase to multiple applications'
+          ]
         },
         {
           date: 'September 2013 - June 2017',
           title: 'Undergraduate Degree',
           company: 'Caledonian University',
-          info: ''
+          info: [
+            'Wrote a research paper on Artificial Intelligence',
+            'Created a 3D Game Engine'
+          ]
         }
       ] as Event[]
     };
@@ -150,6 +185,10 @@ export default defineComponent({
         color: white;
         border-bottom-left-radius: 7px;
         border-top-right-radius: 7px;
+      }
+      ul {
+        text-align: left;
+        padding-left: 20px;
       }
     }
     .right {

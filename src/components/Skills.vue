@@ -30,6 +30,10 @@ export default defineComponent({
       tooltipText: '',
       skills: [
         {
+          image: 'img/skills/vue.png',
+          text: 'Vue'
+        },
+        {
           image: '/img/skills/react.svg',
           text: 'React'
         },
