@@ -107,6 +107,7 @@ export default defineComponent({
       flex-direction: column;
       border-radius: 7px;
       padding: 15px 20px;
+      padding-bottom: 75px;
       box-shadow: 0 0 5px 3px rgb(0 0 0 / 30%);
       cursor: pointer;
 

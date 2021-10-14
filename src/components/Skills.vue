@@ -199,8 +199,8 @@ h2 {
   gap: 20px;
   justify-content: center;
   img {
-    display: inline-block;
-    max-height: 160px;
+    display: flex;
+    height: 160px;
   }
   #tooltip {
     display: flex;

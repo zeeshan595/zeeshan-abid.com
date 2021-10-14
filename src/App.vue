@@ -2,6 +2,7 @@
   <div class="container">
     <Title />
     <Skills />
+    <Experience />
   </div>
 </template>
 
@@ -9,12 +10,14 @@
 import { defineComponent } from 'vue';
 import Title from '@/components/Title.vue';
 import Skills from '@/components/Skills.vue';
+import Experience from '@/components/Experience.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
     Title,
-    Skills
+    Skills,
+    Experience
   }
 });
 </script>
