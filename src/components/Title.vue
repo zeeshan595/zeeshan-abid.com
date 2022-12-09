@@ -1,9 +1,9 @@
 <template>
   <div class="title">
     <div class="left">
-      <h2>Portfolio</h2>
+      <h2>{{ info.title }}</h2>
       <p>
-        Hi, I am Zeeshan Abid. I design, build and deploy web applications.
+        {{ info.subtitle }}
       </p>
       <div class="social-links">
         <a href="https://www.linkedin.com/in/zeeshan595/" target="_blank">
@@ -36,17 +36,11 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from '@vue/runtime-core';
+<script lang="ts" setup>
+import { ref } from 'vue';
+import { info } from '@/data/info';
 
-export default defineComponent({
-  name: 'Title',
-  data() {
-    return {
-      showResumeOverlay: false
-    };
-  }
-});
+const showResumeOverlay = ref(false);
 </script>
 
 <style scoped lang="scss">
