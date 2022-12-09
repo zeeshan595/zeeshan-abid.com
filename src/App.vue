@@ -6,20 +6,10 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script lang="ts" setup>
 import Title from '@/components/Title.vue';
 import Skills from '@/components/Skills.vue';
 import Experience from '@/components/Experience.vue';
-
-export default defineComponent({
-  name: 'App',
-  components: {
-    Title,
-    Skills,
-    Experience
-  }
-});
 </script>
 <style lang="scss">
 body {
