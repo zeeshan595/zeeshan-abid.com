@@ -16,6 +16,7 @@
           <img src="@/assets/resume.png" alt="resume" />
         </a>
       </div>
+      <test-dome-component />
     </div>
     <a class="right" href="./resume.pdf" target="_blank">
       <div
@@ -26,10 +27,14 @@
         <div class="overlay" :class="{ visible: showResumeOverlay }">
           View Resume
         </div>
-        <div class="heading"></div>
+        <div class="heading">resume</div>
         <div class="paragraph long light"></div>
         <div class="paragraph medium dark"></div>
         <div class="paragraph long light"></div>
+        <div class="paragraph short dark"></div>
+        <div class="paragraph long light"></div>
+        <div class="paragraph medium dark"></div>
+        <div class="paragraph short light"></div>
         <div class="paragraph short dark"></div>
       </div>
     </a>
@@ -39,6 +44,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 import { info } from '@/data/info';
+import TestDomeComponent from '@/components/TestDomeComponent.vue';
 
 const showResumeOverlay = ref(false);
 </script>
@@ -65,6 +71,8 @@ const showResumeOverlay = ref(false);
     .social-links {
       display: flex;
       margin-top: 20px;
+      margin-bottom: 20px;
+
       a {
         display: flex;
         margin-right: 20px;
@@ -89,6 +97,7 @@ const showResumeOverlay = ref(false);
     display: flex;
     flex-basis: 60%;
     max-width: 500px;
+    text-decoration: none;
 
     @media screen and (max-width: 500px) {
       display: none;
@@ -112,6 +121,12 @@ const showResumeOverlay = ref(false);
         border-radius: 30px;
         background-color: black;
         margin-bottom: 30px;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        align-items: center;
+        justify-content: center;
       }
       .paragraph {
         display: flex;
@@ -143,13 +158,14 @@ const showResumeOverlay = ref(false);
         width: 100%;
         height: 100%;
         border-radius: 7px;
-        background: rgb(0 0 0 / 70%);
+        background: rgb(0 0 0 / 80%);
         justify-content: center;
         align-items: center;
         color: white;
         font-size: 30px;
         opacity: 0;
         transition: 0.3s;
+        text-transform: uppercase;
       }
       .visible {
         opacity: 1;

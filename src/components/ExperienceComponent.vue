@@ -101,7 +101,6 @@ import { events } from '@/data/experience';
         font-weight: bold;
         font-size: 14px;
         cursor: pointer;
-
       }
       .date {
         display: flex;

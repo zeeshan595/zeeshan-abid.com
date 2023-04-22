@@ -1,15 +1,15 @@
 <template>
   <div class="container">
-    <Title />
-    <Skills />
-    <Experience />
+    <title-component />
+    <skills-component />
+    <experience-component />
   </div>
 </template>
 
 <script lang="ts" setup>
-import Title from '@/components/Title.vue';
-import Skills from '@/components/Skills.vue';
-import Experience from '@/components/Experience.vue';
+import TitleComponent from '@/components/TitleComponent.vue';
+import SkillsComponent from '@/components/SkillComponent.vue';
+import ExperienceComponent from '@/components/ExperienceComponent.vue';
 </script>
 <style lang="scss">
 body {
