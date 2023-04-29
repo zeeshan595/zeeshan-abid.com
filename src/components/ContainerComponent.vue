@@ -1,7 +1,9 @@
 <template>
   <div class="full-width" :class="{ green: green, white: !green }">
     <div class="container">
-      <slot></slot>
+      <div class="content">
+        <slot></slot>
+      </div>
     </div>
   </div>
 </template>
@@ -27,5 +29,12 @@ defineProps<{
   margin-left: auto;
   margin-right: auto;
   max-width: 800px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 </style>

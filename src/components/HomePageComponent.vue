@@ -10,12 +10,14 @@
       Nest JS in the back-end.
     </p>
     <div class="badges">
-      <a href="#" class="badge"> Top 10% on Javascript Test by Test Dome </a>
-      <a href="#" class="badge">
+      <a href="#" class="badge" target="_blank">
+        Top 10% on Javascript Test by Test Dome
+      </a>
+      <a href="#" class="badge" target="_blank">
         Top 5% of 2.4M people JavaScript Assessment LinkedIn
       </a>
     </div>
-    <a href="#" class="button">Download Resume</a>
+    <a href="#" class="button" target="_blank">Download Resume</a>
     <img src="@/assets/down.svg" alt="scroll-down" />
   </div>
 </template>
