@@ -1,9 +1,9 @@
 <template>
   <div class="social-links">
-    <a href="#" target="_blank">
+    <a href="https://github.com/zeeshan595" target="_blank">
       <img src="@/assets/github.svg" alt="github" />
     </a>
-    <a href="#" target="_blank">
+    <a href="https://www.linkedin.com/in/zeeshan595/" target="_blank">
       <img src="@/assets/linkedin.svg" alt="linkedin" />
     </a>
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="experiences">
+  <div id="experience" class="experiences">
     <h2>experience</h2>
     <div v-for="(experience, index) in data" :key="index" class="experience">
       <div class="timeline">
@@ -47,9 +47,12 @@ const data = [
       'Vue',
       'Tailwind',
       'Typescript',
+      'Jest',
+      'Cypress',
       'NestJs',
       'graphql',
       'MongoDb',
+      'Docker',
       'Sentry',
       'Linux',
       'Rust',
@@ -84,8 +87,11 @@ const data = [
       'Typescript',
       'Node Js',
       '.NET',
+      'Postgres',
+      'M-SQL',
       'Azure',
       'Docker',
+      'Jest',
       'CI/CD',
       'Azure Dev Ops',
       'Application Insight',
@@ -99,9 +105,9 @@ const data = [
   {
     title: 'Front-End Developer',
     company: '@Scottish Power',
-    link: 'scottishpower.co.uk',
+    link: 'https://scottishpower.co.uk',
     time: 'September 18 - April 19',
-    tags: ['React', 'Typescript', 'NodeJs', 'SASS'],
+    tags: ['React', 'Typescript', 'NodeJs', 'SASS', 'Jest'],
   },
   {
     title: 'Games Programmer',

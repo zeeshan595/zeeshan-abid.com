@@ -1,5 +1,5 @@
 <template>
-  <div class="skills">
+  <div id="skills" class="skills">
     <h2>Skills</h2>
     <div class="skill">
       <div class="image">

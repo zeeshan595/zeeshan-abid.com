@@ -1,9 +1,9 @@
 <template>
   <div class="nav-bar">
-    <a href="#">home</a>
-    <a href="#">skills</a>
-    <a href="#">experience</a>
-    <a href="#">contact</a>
+    <a href="#home">home</a>
+    <a href="#skills">skills</a>
+    <a href="#experience">experience</a>
+    <a href="#contact">contact</a>
   </div>
 </template>
 

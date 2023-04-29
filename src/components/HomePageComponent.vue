@@ -1,5 +1,6 @@
 <template>
-  <div class="home-page">
+  <div id="home" class="home-page">
+    <div class="profile-picture"></div>
     <h1>zeeshan abid</h1>
     <p>
       Hi, my name is Zeeshan Abid, and I am a Glasgow based freelancer /
@@ -10,14 +11,22 @@
       Nest JS in the back-end.
     </p>
     <div class="badges">
-      <a href="#" class="badge" target="_blank">
+      <a
+        href="https://www.testdome.com/certificates/298f6de9a3a44553a6b083d1bcb6ce02"
+        class="badge"
+        target="_blank"
+      >
         Top 10% on Javascript Test by Test Dome
       </a>
-      <a href="#" class="badge" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/zeeshan595/"
+        class="badge"
+        target="_blank"
+      >
         Top 5% of 2.4M people JavaScript Assessment LinkedIn
       </a>
     </div>
-    <a href="#" class="button" target="_blank">Download Resume</a>
+    <a href="/resume.pdf" class="button" target="_blank">Download Resume</a>
     <img src="@/assets/down.svg" alt="scroll-down" />
   </div>
 </template>
@@ -31,6 +40,15 @@
   align-items: center;
   flex-direction: column;
   gap: 30px;
+
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url(@/assets/zeeshan.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
 
   h1 {
     font-size: 24px;

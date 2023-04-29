@@ -14,6 +14,10 @@
     <container-component :green="true">
       <experience-component />
     </container-component>
+    <!-- CONTACT -->
+    <container-component :green="false">
+      <contact-component />
+    </container-component>
   </div>
 </template>
 
@@ -24,6 +28,7 @@ import SocialLinksComponent from './components/SocialLinksComponent.vue';
 import HomePageComponent from './components/HomePageComponent.vue';
 import SkillsComponent from './components/SkillsComponent.vue';
 import ExperienceComponent from './components/ExperienceComponent.vue';
+import ContactComponent from './components/ContactComponent.vue';
 </script>
 
 <style lang="scss">
