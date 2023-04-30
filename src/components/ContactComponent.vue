@@ -1,12 +1,25 @@
 <template>
   <div id="contact" class="contact">
     <h2>Contact</h2>
-    <p>
-      If you wish to reach out to me please send me an email at
-      <a href="mailto:zeeshan.abid.com@gmail.com">
-        zeeshan.abid.com@gmail.com
-      </a>
-    </p>
+    <div class="field">
+      <span>name</span>
+      <input type="text" name="name" placeholder="John Smith" />
+    </div>
+    <div class="field">
+      <span>email</span>
+      <input type="text" name="email" placeholder="John.Smith@gmail.com" />
+    </div>
+    <div class="field">
+      <span>message</span>
+      <textarea
+        type="text"
+        name="message"
+        placeholder="What would you like to talk about?"
+      ></textarea>
+    </div>
+    <div class="submit-button">
+      <a href="#" class="button">Send</a>
+    </div>
   </div>
 </template>
 
@@ -25,13 +38,25 @@
     font-weight: bold;
     text-transform: uppercase;
   }
-  p {
-    margin: 0;
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    input,
+    span {
+      margin: 0;
+    }
+    span {
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
   }
-  a {
-    color: #2f3e46;
-    font-weight: bold;
-    text-decoration: none;
+  .submit-button {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 430px;
   }
 }
 </style>
