@@ -2,28 +2,37 @@
   <div id="contact" class="contact">
     <h2>Contact</h2>
     <div class="field">
-      <span>name</span>
-      <input type="text" name="name" placeholder="John Smith" />
+      <span>Subject</span>
+      <input v-model="subject" type="text" placeholder="New Job Opertunity" />
     </div>
     <div class="field">
-      <span>email</span>
-      <input type="text" name="email" placeholder="John.Smith@gmail.com" />
-    </div>
-    <div class="field">
-      <span>message</span>
+      <span>Message</span>
       <textarea
+        v-model="body"
         type="text"
         name="message"
-        placeholder="What would you like to talk about?"
+        placeholder="I am interested in working with you"
       ></textarea>
     </div>
     <div class="submit-button">
-      <a href="#" class="button">Send</a>
+      <a @click="buildMailLink()" class="button">Send an Email</a>
     </div>
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ref } from 'vue';
+
+const subject = ref('');
+const body = ref('');
+
+function buildMailLink() {
+  const params = new URLSearchParams();
+  params.append('subject', subject.value);
+  params.append('body', body.value);
+  parent.location = `mailto:zeeshan.abid.com@gmail.com?${params.toString()}`;
+}
+</script>
 
 <style lang="scss" scoped>
 .contact {
