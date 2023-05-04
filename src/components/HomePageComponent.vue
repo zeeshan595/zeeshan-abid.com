@@ -7,8 +7,8 @@
       contractor. I work remotely for clients all over the world.
     </p>
     <p>
-      I specialise in Full Stack Development using Vue3 on the front-end and
-      Nest JS in the back-end.
+      I specialise in Full Stack Development using React / Vue3 on the front-end
+      and Nest JS in the back-end.
     </p>
     <div class="badges">
       <a
