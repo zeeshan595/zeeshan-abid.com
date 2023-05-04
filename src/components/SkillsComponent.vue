@@ -8,7 +8,7 @@
       </div>
       <div class="info">
         <p>
-          I love working with Vue 3 alongside tailwind and typescript for front
+          I love working with React & Vue 3 alongside tailwind and typescript for front
           end development.
         </p>
         <div class="progress">
