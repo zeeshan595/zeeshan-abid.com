@@ -83,11 +83,9 @@ export default function () {
           And worked on several Vue-based apps including{' '}
           <Link href="https://springboard.holo.host">Springboard</Link>,{' '}
           <Link href="https://register.holo.host">Registration</Link> and{' '}
-          <Link href="https://cloud-console.holo.host">
-            Cloud Console.
-          </Link>
+          <Link href="https://cloud-console.holo.host">Cloud Console.</Link>
           <Image src="/images/springboard.png" alt="hbs" />
-          Before I left I also built an API in Rust using Actix for{' '}
+          Before I left I also built an API in Rust using Actix hosted on
           <Link href="https://api.dev.holo.host">api.holo.host</Link>.
           <Image src="/images/hpapi.png" alt="hbs" />
         </span>
