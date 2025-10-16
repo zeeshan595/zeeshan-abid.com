@@ -1,17 +1,12 @@
 import * as React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/home';
-import Impact from './pages/impact';
 import NotFound from './pages/not-found';
 
 export const router = createBrowserRouter([
   {
     path: '/',
     element: <Home />,
-  },
-  {
-    path: '/impact',
-    element: <Impact />,
   },
   {
     path: '*',

@@ -18,16 +18,15 @@ export default function () {
 
       <div className="flex-col">
         <span>
-          Right now I'm working on Control for Coincover. In my free time I like
-          to experiment with side projects such as{' '}
-          <Link href="/impact">Impact</Link> and Shadow and Flame.
+          Right now I'm working on Control for{' '}
+          <Link href="#coincover">Coincover</Link>. In my free time I like to
+          experiment with side projects such as{' '}
+          <Link href="#impact">Impact</Link> and Shadow and Flame.
         </span>
-
-        <Image src="/images/impact.png" />
       </div>
 
-      <Section heading="Coincover" link="https://coincover.com">
-        <span id="coincover">
+      <Section id="coincover" heading="Coincover" link="https://coincover.com">
+        <span>
           At Coincover I built the Coincover SDK, which allows our clients such
           as Fireblocks and BitGo to integrate with our platform easily and
           securely.
@@ -38,6 +37,20 @@ export default function () {
           everything compliant and secure.
         </span>
         <Image src="/images/control.png" alt="control" />
+      </Section>
+
+      <Section id="impact" heading="Impact">
+        <span>
+          Impact is a virtual tabletop that can be used to play a TTRPG
+          (Dungeons and Dragons). It is built with Vue + ThreeJs while using
+          rapier.js as a physics engine.
+        </span>
+        <span>
+          You can visit{' '}
+          <Link href="https://dev.impactrpg.app">dev.impactrpg.app</Link> and
+          create a room to start playing today
+        </span>
+        <Image src="/images/impact.png" />
       </Section>
 
       <Section heading="Holo" link="https://holo.host">
