@@ -18,7 +18,7 @@ export default function () {
   return (
     <div
       className="mx-4 flex-col gap-4 my-18 items-center"
-      style={{ maxWidth: '370px' }}
+      style={{ maxWidth: '600px', minWidth: '370px' }}
     >
       <React.StrictMode>
         <RouterProvider router={router} />
