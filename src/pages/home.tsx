@@ -37,9 +37,9 @@ export default function () {
           securely.
         </span>
         <span>
-          I also worked on our customer facing app called Control. It helps
-          organizations safely recover their digital assets while keeping
-          everything compliant and secure.
+          I also worked on our customer facing app called Control built on React
+          (Shadcn). It helps organizations safely recover their digital assets
+          while keeping everything compliant and secure.
         </span>
         <Image src="/images/control.png" alt="control" />
       </Section>
