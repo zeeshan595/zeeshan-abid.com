@@ -83,7 +83,7 @@ export default function () {
           And worked on several Vue-based apps including{' '}
           <Link href="https://springboard.holo.host">Springboard</Link>,{' '}
           <Link href="https://register.holo.host">Registration</Link> and{' '}
-          <Link href="https://cloud-console.dev.holo.host/login">
+          <Link href="https://cloud-console.holo.host">
             Cloud Console.
           </Link>
           <Image src="/images/springboard.png" alt="hbs" />
