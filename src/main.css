@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: 'Ubuntu', sans-serif !important;
+  justify-content: center;
+  background-color: #cfd7d6;
+  color: var(--color-neutral-700);
+}
+
+div {
+  display: flex;
+}
+
+.profile-pic {
+  background-image: url('/images/zeeshan.jpeg');
+}
+
+#app {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: var(--color-neutral-800);
+  text-decoration: underline;
+  cursor: pointer;
+}
