@@ -25,7 +25,7 @@ export default function () {
         </span>
         <span>
           You can find me on{' '}
-          <a href="https://linkedin.com/in/zeeshan595">LinkedIn</a> or on{' '}
+          <a href="https://linkedin.com/in/zeeshan595">LinkedIn</a> or{' '}
           <a href="https://github.com/zeeshan595">Github</a>.
         </span>
       </div>
@@ -62,8 +62,12 @@ export default function () {
         <span>
           I enjoy solving problems and finding ways to make things faster. While
           exploring the V8 JavaScript engine, I noticed that string comparisons
-          could be improved. I reached out to the V8 developers and am now
-          working with them to optimize case insensitive string comparisons.
+          could be improved. I reached out to the{' '}
+          <Link href="https://groups.google.com/g/v8-dev/c/7ip7AowVGHY">
+            V8 developers
+          </Link>{' '}
+          and am now working with them to optimize case insensitive string
+          comparisons.
         </span>
       </Section>
 
