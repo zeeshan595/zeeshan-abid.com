@@ -17,7 +17,7 @@ export const router = createBrowserRouter([
 export default function () {
   return (
     <div
-      className="flex-col gap-4 my-18 items-center"
+      className="mx-4 flex-col gap-4 my-18 items-center"
       style={{ maxWidth: '370px' }}
     >
       <React.StrictMode>

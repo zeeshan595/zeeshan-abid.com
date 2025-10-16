@@ -6,7 +6,7 @@ export type Props = {
   alt?: string;
 };
 
-export default function(props: Props) {
+export default function (props: Props) {
   const [isPopup, setIsPopup] = useState(false);
 
   return (
@@ -19,7 +19,7 @@ export default function(props: Props) {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.8, opacity: 0 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className="fixed cursor-pointer left-0 top-0 w-[calc(100%-20px)] h-[calc(100%-20px)] m-[10px] bg-no-repeat bg-center bg-contain bg-black/80 z-50"
+            className="fixed cursor-pointer left-0 top-0 w-[101%] h-[101%] bg-no-repeat bg-center bg-contain bg-black/80 z-50"
             style={{
               backgroundImage: `url('${props.src}')`,
             }}

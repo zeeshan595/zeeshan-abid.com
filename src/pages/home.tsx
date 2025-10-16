@@ -25,8 +25,8 @@ export default function () {
         </span>
         <span>
           You can find me on{' '}
-          <a href="https://linkedin.com/in/zeeshan595">LinkedIn</a> or{' '}
-          <a href="https://github.com/zeeshan595">Github</a>.
+          <Link href="https://linkedin.com/in/zeeshan595">LinkedIn</Link> or{' '}
+          <Link href="https://github.com/zeeshan595">Github</Link>.
         </span>
       </div>
 
