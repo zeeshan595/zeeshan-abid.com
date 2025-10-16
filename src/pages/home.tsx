@@ -66,10 +66,10 @@ export default function () {
           <Link href="https://springboard.holo.host">Springboard</Link>,{' '}
           <Link href="https://register.holo.host">Registration</Link> and{' '}
           <Link href="https://cloud-console.dev.holo.host/login">
-            Cloud Console
+            Cloud Console.
           </Link>
-          <Image src="/images/springboard.png" alt="hbs" />. Before I left I
-          also built an API in Rust using Actix for{' '}
+          <Image src="/images/springboard.png" alt="hbs" />
+          Before I left I also built an API in Rust using Actix for{' '}
           <Link href="https://api.dev.holo.host">api.holo.host</Link>.
           <Image src="/images/hpapi.png" alt="hbs" />
         </span>
