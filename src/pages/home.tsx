@@ -16,12 +16,17 @@ export default function () {
         </div>
       </div>
 
-      <div className="flex-col">
+      <div className="flex-col gap-2">
         <span>
           Right now I'm working on Control for{' '}
           <Link href="#coincover">Coincover</Link>. In my free time I like to
           experiment with side projects such as{' '}
           <Link href="#impact">Impact</Link> and Shadow and Flame.
+        </span>
+        <span>
+          You can find me on{' '}
+          <a href="https://linkedin.com/in/zeeshan595">LinkedIn</a> or on{' '}
+          <a href="https://github.com/zeeshan595">Github</a>.
         </span>
       </div>
 
@@ -51,6 +56,15 @@ export default function () {
           create a room to start playing today
         </span>
         <Image src="/images/impact.png" />
+      </Section>
+
+      <Section heading="V8 JavaScript Engine">
+        <span>
+          I enjoy solving problems and finding ways to make things faster. While
+          exploring the V8 JavaScript engine, I noticed that string comparisons
+          could be improved. I reached out to the V8 developers and am now
+          working with them to optimize case insensitive string comparisons.
+        </span>
       </Section>
 
       <Section heading="Holo" link="https://holo.host">
