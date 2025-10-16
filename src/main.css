@@ -24,7 +24,7 @@ div {
 }
 
 a {
-  color: var(--color-neutral-800);
+  color: var(--color-neutral-700);
   text-decoration: underline;
   cursor: pointer;
 }
