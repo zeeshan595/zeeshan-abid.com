@@ -41,7 +41,7 @@ export default function () {
           (Shadcn). It helps organizations safely recover their digital assets
           while keeping everything compliant and secure.
         </span>
-        <Image src="/images/control.png" alt="control" />
+        <Image src="/images/control.webp" alt="control" />
       </Section>
 
       <Section id="impact" heading="Impact">
@@ -55,7 +55,7 @@ export default function () {
           <Link href="https://dev.impactrpg.app">dev.impactrpg.app</Link> and
           create a room to start playing today
         </span>
-        <Image src="/images/impact.png" />
+        <Image src="/images/impact.webp" alt="impactrpg" />
       </Section>
 
       <Section heading="V8 JavaScript Engine">
@@ -79,15 +79,15 @@ export default function () {
             Holo Business Services
           </Link>{' '}
           in Nest.js.
-          <Image src="/images/hbs.png" alt="hbs" />
+          <Image src="/images/hbs.webp" alt="hbs" />
           And worked on several Vue-based apps including{' '}
           <Link href="https://springboard.holo.host">Springboard</Link>,{' '}
           <Link href="https://register.holo.host">Registration</Link> and{' '}
           <Link href="https://cloud-console.holo.host">Cloud Console.</Link>
-          <Image src="/images/springboard.png" alt="hbs" />
+          <Image src="/images/springboard.webp" alt="hbs" />
           Before I left I also built an API in Rust using Actix hosted on{' '}
           <Link href="https://api.dev.holo.host">api.holo.host</Link>.
-          <Image src="/images/hpapi.png" alt="hbs" />
+          <Image src="/images/hpapi.webp" alt="hbs" />
         </span>
       </Section>
 
@@ -164,7 +164,7 @@ export default function () {
           </Link>
           .
         </span>
-        <Image src="/images/owlbear.png" alt="owlbear" />
+        <Image src="/images/owlbear.webp" alt="owlbear" />
       </Section>
 
       <Section heading="Unity3D Youtube Tutorials">
