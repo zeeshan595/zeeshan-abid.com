@@ -33,6 +33,7 @@ export default function (props: Props) {
         alt={props.alt}
         className="cursor-pointer transition-transform duration-200 hover:scale-105 my-4"
         onClick={() => setIsPopup(true)}
+        fetchPriority="high"
       />
     </>
   );
