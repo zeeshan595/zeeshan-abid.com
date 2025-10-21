@@ -7,7 +7,6 @@ body {
   display: flex;
   font-family: 'Ubuntu', sans-serif !important;
   justify-content: center;
-  background-color: #cfd7d6;
   color: var(--color-neutral-700);
 }
 
