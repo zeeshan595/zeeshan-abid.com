@@ -31,7 +31,16 @@ export default function (props: Props) {
       <img
         src={props.src}
         alt={props.alt}
-        className="cursor-pointer transition-transform duration-200 hover:scale-105 my-4"
+        className="
+          my-4
+          cursor-pointer
+          rounded-xl
+          shadow-md
+          shadow-neutral-900
+          transition-all duration-200 
+          hover:scale-105 
+          hover:shadow-lg
+        "
         onClick={() => setIsPopup(true)}
         fetchPriority="high"
       />

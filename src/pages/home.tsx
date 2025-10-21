@@ -8,7 +8,20 @@ export default function () {
       <div className="text-6xl text-neutral-800">Zeeshan Abid</div>
 
       <div className="flex-row gap-4">
-        <div className="min-h-20 min-w-20 w-20 h-20 rounded-full bg-center bg-cover profile-pic"></div>
+        <div
+          className="
+          min-h-20
+          min-w-20
+          w-20
+          h-20
+          rounded-full
+          bg-center
+          bg-cover
+          profile-pic
+          shadow-sm
+          shadow-neutral-900
+        "
+        ></div>
         <div className="flex-wrap">
           I'm a full stack developer with more than eight years of experience. I
           mostly work in the TypeScript and Node ecosystem, building clean and
