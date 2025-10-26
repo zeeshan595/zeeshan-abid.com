@@ -34,7 +34,7 @@ export default function () {
           Right now I'm working on Control for{' '}
           <Link href="#coincover">Coincover</Link>. In my free time I like to
           experiment with side projects such as{' '}
-          <Link href="#impact">Impact</Link> and Shadow and Flame.
+          <Link href="#impact">Impact</Link> and Streemly.io.
         </span>
         <span>
           You can find me on{' '}
