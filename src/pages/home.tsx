@@ -98,6 +98,7 @@ export default function () {
           <Link href="https://register.holo.host">Registration</Link> and{' '}
           <Link href="https://cloud-console.holo.host">Cloud Console.</Link>
           <Image src="/images/springboard.webp" alt="hbs" />
+          <Image src="/images/registration.webp" alt="hbs" />
           Before I left I also built an API in Rust using Actix hosted on{' '}
           <Link href="https://api.dev.holo.host">api.holo.host</Link>.
           <Image src="/images/hpapi.webp" alt="hbs" />
